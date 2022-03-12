@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".FragmentoModificacion">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/modCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Codigo Registro"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnModificar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Modificar Registro"
+            android:drawableLeft="@drawable/ic_modificar"
+            android:backgroundTint="@android:color/holo_blue_dark"/>
+
+        <EditText
+            android:id="@+id/modPatente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Patente"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/modDocVehiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Documentacion Vehiculo"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/modFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Fecha "
+                android:inputType="datetime"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/btnModFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Fecha"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:drawableLeft="@drawable/ic_calendario"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <EditText
+                android:id="@+id/modHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Hora "
+                android:inputType="datetime"
+                android:minHeight="48dp" />
+
+            <Button
+                android:id="@+id/btnModHora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text=" Hora"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:drawableLeft="@drawable/ic_hora"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sistema Direccion"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"/>
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp">
+
+                <RadioButton
+                    android:id="@+id/rdModDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptado" />
+
+                <RadioButton
+                    android:id="@+id/rdModNoDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rechazado" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frenos"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"/>
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp">
+
+                <RadioButton
+                    android:id="@+id/rdModFreno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aceptado" />
+
+                <RadioButton
+                    android:id="@+id/rdModNoFreno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rechazado" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Neumaticos y llantas"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp">
+
+                    <RadioButton
+                        android:id="@+id/rdModNeumatico"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceptado" />
+
+                    <RadioButton
+                        android:id="@+id/rdModNoNeumatico"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rechazado" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Suspension"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp">
+
+                    <RadioButton
+                        android:id="@+id/rdModSuspension"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceptado" />
+
+                    <RadioButton
+                        android:id="@+id/rdModNoSuspension"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rechazado" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alineacion"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp">
+
+                    <RadioButton
+                        android:id="@+id/rdModAlineacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceptado" />
+
+                    <RadioButton
+                        android:id="@+id/rdModNoAlineacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rechazado" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kit de Seguridad"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp">
+
+                    <RadioButton
+                        android:id="@+id/rdModSeguridad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceptado" />
+
+                    <RadioButton
+                        android:id="@+id/rdModNoSeguridad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rechazado" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cinturon de Seguridad"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp">
+
+                    <RadioButton
+                        android:id="@+id/rdModCinturon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceptado" />
+
+                    <RadioButton
+                        android:id="@+id/rdModNoCinturon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rechazado" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Luces"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp">
+
+                    <RadioButton
+                        android:id="@+id/rdModLuces"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceptado" />
+
+                    <RadioButton
+                        android:id="@+id/rdModNoLuces"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rechazado" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Puertas"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp">
+
+                    <RadioButton
+                        android:id="@+id/rdModPuerta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceptado" />
+
+                    <RadioButton
+                        android:id="@+id/rdModNoPuerta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rechazado" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vidrios"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp">
+
+                    <RadioButton
+                        android:id="@+id/rdModVidrio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceptado" />
+
+                    <RadioButton
+                        android:id="@+id/rdModNoVidrio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rechazado" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tubo de escape"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp">
+
+                    <RadioButton
+                        android:id="@+id/rdModEscape"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceptado"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        android:id="@+id/rdModNoEscape"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rechazado"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gases"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="5dp">
+
+                    <RadioButton
+                        android:id="@+id/rdModGases"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aceptado" />
+
+                    <RadioButton
+                        android:id="@+id/rdModNoGases"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rechazado" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgModRegistro"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:padding="10dp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/ic_launcher"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnModTomarFoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tomar Foto"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@android:color/holo_blue_dark"
+                    android:drawableLeft="@drawable/ic_camara"/>
+
+                <Button
+                    android:id="@+id/btnModGuardarFoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guardar Foto"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@android:color/holo_blue_dark"
+                    android:drawableLeft="@drawable/ic_guardarfoto"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnGuardarModificacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Guardar Registro Modificado"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="@android:color/holo_blue_dark"
+                    android:drawableLeft="@drawable/ic_guardar"/>
+            </LinearLayout>
+    </LinearLayout>
+</ScrollView>

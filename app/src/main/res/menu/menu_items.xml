@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_Inicio"
+        android:title="Inicio"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/nav_Registro"
+        android:title="Registro Revision"
+        android:icon="@drawable/ic_registro"/>
+
+    <item
+        android:id="@+id/nav_Busqueda"
+        android:title="Busqueda Revision"
+        android:icon="@drawable/ic_busqueda"/>
+
+    <item
+        android:id="@+id/nav_Modificar"
+        android:title="Modificar Revision"
+        android:icon="@drawable/ic_modificar"/>
+
+    <item
+        android:id="@+id/nav_Eliminar"
+        android:title="Eliminar Revision"
+        android:icon="@drawable/ic_eliminar"/>
+
+
+</menu>
